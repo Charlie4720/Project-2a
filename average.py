@@ -1,12 +1,11 @@
-# Prompt the user to enter five numbers
-numbers = []
-for i in range(5):
-    num = float(input(f"Enter number {i+1}: "))
-    numbers.append(num)
+# Get five numbers from the user
+numbers = input("Enter five numbers separated by spaces: ").split()
 
-# Calculate the average of the numbers
+# Convert the input into a list of floats
+numbers = [float(num) for num in numbers]
+
+# Calculate the average
 average = sum(numbers) / len(numbers)
 
-# Display the average to 7 decimal places
-formatted_average = "{:.7f}".format(average)
-print("Average:", formatted_average)
+# Print the average
+print("The average is:", average)
