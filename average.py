@@ -1,5 +1,5 @@
 # Ask the user to input five numbers separated by commas
-numbers_input = input("Enter five numbers separated by commas: ")
+numbers_input = input("Enter five numbers: ")
 
 # Split the input string into a list of individual numbers
 numbers_list = numbers_input.split(',')
