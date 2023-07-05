@@ -1,10 +1,13 @@
-# Get five numbers from the user
-numbers = input("Enter five numbers separated by spaces: ").split()
+# Ask the user to input five numbers separated by commas
+numbers_input = input("Enter five numbers separated by commas: ")
 
-# Convert the input into a list of floats
-numbers = [float(num) for num in numbers]
+# Split the input string into a list of individual numbers
+numbers_list = numbers_input.split(',')
 
-# Calculate the average
+# Convert the numbers from strings to floats
+numbers = [float(num) for num in numbers_list]
+
+# Calculate the average of the numbers
 average = sum(numbers) / len(numbers)
 
 # Print the average
