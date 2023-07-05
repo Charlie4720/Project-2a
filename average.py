@@ -11,4 +11,4 @@ numbers = [float(num) for num in numbers_list]
 average = sum(numbers) / len(numbers)
 
 # Print the average
-print("The average is:", average)
+print("The average of those numbers is:", average)
